@@ -68,7 +68,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        label->setText(QApplication::translate("MainWindow", "V1.0.2", nullptr));
+        label->setText(QApplication::translate("MainWindow", "V1.0.3", nullptr));
         pushButton->setText(QApplication::translate("MainWindow", "Check for update", nullptr));
         label_2->setText(QString());
     } // retranslateUi
