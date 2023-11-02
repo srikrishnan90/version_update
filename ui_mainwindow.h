@@ -27,6 +27,7 @@ public:
     QWidget *centralWidget;
     QLabel *label;
     QPushButton *pushButton;
+    QLabel *label_2;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -44,6 +45,9 @@ public:
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
         pushButton->setGeometry(QRect(130, 80, 131, 23));
+        label_2 = new QLabel(centralWidget);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(80, 140, 241, 20));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -64,8 +68,9 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        label->setText(QApplication::translate("MainWindow", "V1.0.3", nullptr));
+        label->setText(QApplication::translate("MainWindow", "V1.0.2", nullptr));
         pushButton->setText(QApplication::translate("MainWindow", "Check for update", nullptr));
+        label_2->setText(QString());
     } // retranslateUi
 
 };
